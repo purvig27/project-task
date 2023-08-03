@@ -1,0 +1,26 @@
+<div class="container">
+    <h3 class="text-center">Movie Details</h3>
+    <mat-card class="detail_card mb-3">
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-12">
+                <img src="{{moviedata.info.image_url}}" alt="">
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <mat-card-content>
+                    <div class="card-detail">
+                        <h4><strong>{{moviedata.title}}</strong></h4>
+                        <p>{{moviedata.info.plot}}</p>
+                        <ul class="list-style">
+                            <li>{{moviedata.info.actors}}</li>
+                            <li><span class="rating"> {{moviedata.info.rating}}</span></li>
+                            <li>{{moviedata.info.genres}}</li>
+                            <li>{{moviedata.info.directors}}</li>
+                            <li>{{moviedata.info.rank}}</li>
+                            <li>{{moviedata.info.release_date}}</li>
+                        </ul>
+                    </div>
+                </mat-card-content>
+            </div>
+        </div>
+    </mat-card>
+</div>
